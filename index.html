@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@0.4.0/dist/confetti.browser.min.js"></script>
     <title>Document</title>
 </head>
+
 <body>
-    
-        <div class="container">
-                <p id="timer">
-                    <span id="timer-days"></span>
-                    <span id="timer-hours"></span>
-                    <span id="timer-mins"></span>
-                    <span id="timer-secs" class='label'></span>
-                </p>
+      
+    <div class="container">
+        <div class="row">
+            <div class="column"><h3></h3>
             </div>
-            <script src="app.js"></script>
+        </div>
+        <div class="row">
+            <div class="column"><h3>Barcelona is coming soon (Jan 23, 2020, 09:57am BCN)</h3>
+
+
+                <div class="row">
+                    <div class="column">
+                        <p id="timer">
+                            <span id="timer-days">38 DAY(S)</span>
+                            <span id="timer-hours">15 HR(S)</span>
+                            <span id="timer-mins">13 MIN(S)</span>
+                            <span id="timer-secs">30 SEC(S)</span>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div> 
+
     
+
+        <script src="app.js" src="confetti.js"></script>
+     
+
 </body>
+
 </html>
