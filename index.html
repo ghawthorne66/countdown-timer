@@ -20,13 +20,19 @@
 		<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@0.4.0/dist/confetti.browser.min.js"></script>
 		<link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet" />
 
+			
+
 		<title>Merry Christmas</title>
 	</head>
 	<body onload='run()' style='background:black'>
-        
+
 		<div class="container">
 			<div class="row">
-
+				<audio id="yourAudio" preload='none'>
+					<source src="02 - Mele Kalikimaka.mp3"  type='audio/wav' />
+				</audio>
+				<a href="#" id="audioControl">play!</a>
+		
 
 				<div class="col-lg">
 
@@ -75,14 +81,21 @@
 				<li></li>
 				<li></li>
 			  </ul>
-			  
-			  
-			  
+
+			  <br>
+		  
 			  <!-- Large modal -->
 			  <div class="container">
 			  <div class="row">
 				  <div class="col-lg">
 					  <button type="button" class="btn btn-danger" data-toggle="modal" data-target=".bd-example-modal-lg">Click Me</button>
+
+					 
+					 
+					  <!-- <audio id="yourAudio" preload='none'>
+					<source src="./01 - Christmas Cookie Song.mp3"  type='audio/wav' />
+				</audio>
+				<a href="#" id="audioControl">play!</a> -->
 
 					  <!--tree-->
 					  <canvas id='scene' width='400px' height='350px'></canvas>
@@ -186,8 +199,11 @@
 			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
 			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
 			crossorigin="anonymous"
-        ></script>
+		></script>
+		
         <script src="index.js"></script>
-        <script src="app.js"></script>
+		<script src="app.js"></script>
+		<script src="audio.js"></script>
+
 	</body>
 </html>
